@@ -1,1 +1,110 @@
+/* General page styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+div {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+
+/* Sort/filter controls */
+div > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+  font-size: 1rem;
+}
+
+select {
+  margin-left: 8px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  background: #f4f4f4;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+select:focus {
+  outline: none;
+  border: 1.5px solid #3182ce;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+th {
+  background: #f0f4f8;
+  color: #2d3748;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background 0.18s;
+}
+
+tbody tr:hover {
+  background: #f7fafc;
+}
+
+td {
+  color: #444;
+  font-size: 0.98rem;
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+  div {
+    padding: 12px 4px;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th, td {
+    padding: 10px 6px;
+  }
+  th {
+    border-bottom: none;
+  }
+  tr {
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+}
 
